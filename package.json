@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha",
     "install": "node-gyp rebuild"
   },
   "repository": {
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/brendanashworth/node-murmurhash3/issues"
   },
-  "homepage": "https://github.com/brendanashworth/node-murmurhash3"
+  "homepage": "https://github.com/brendanashworth/node-murmurhash3",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
 }
