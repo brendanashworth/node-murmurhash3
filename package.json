@@ -1,0 +1,30 @@
+{
+  "name": "node-murmurhash3",
+  "version": "0.0.0",
+  "description": "Node.js binding to jwerle's murmurhash3 implementation.",
+  "main": "src/murmurhash.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendanashworth/node-murmurhash3"
+  },
+  "keywords": [
+    "murmurhash",
+    "murmurhash3",
+    "node-murmurhash",
+    "node-murmurhash3"
+  ],
+  "author": "Brendan Ashworth",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/brendanashworth/node-murmurhash3/issues"
+  },
+  "homepage": "https://github.com/brendanashworth/node-murmurhash3"
+}
