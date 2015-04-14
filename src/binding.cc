@@ -14,8 +14,6 @@ using v8::Exception;
 using v8::String;
 
 void Murmurhash(const FunctionCallbackInfo<Value>& args) {
-    Isolate* isolate = args.GetIsolate();
-
     // We check arguments in murmurhash.js; no need here
     String::Utf8Value key(args[0]->ToString());
     uint32_t seed = args[1]->Int32Value();
