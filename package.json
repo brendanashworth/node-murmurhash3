@@ -1,6 +1,6 @@
 {
   "name": "node-murmurhash3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js binding to jwerle's murmurhash3 implementation.",
   "main": "src/murmurhash.js",
   "directories": {
