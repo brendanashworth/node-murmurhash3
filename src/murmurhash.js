@@ -1,8 +1,10 @@
 var binding = require('../build/Release/murmurhash');
 
-exports.hash = function(key) {
+exports.hash = function(key, seed) {
     if (typeof key !== 'string')
         throw new TypeError('key argument must be a string');
+    if (seed !== undefined && typeof seed !== 'number')
+        throw new TypeError('seed argument must be a number');
 
-    return binding.hash(key);
+    return binding.hash(key, seed || 1);
 };

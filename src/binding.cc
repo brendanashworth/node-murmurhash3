@@ -18,8 +18,9 @@ void Murmurhash(const FunctionCallbackInfo<Value>& args) {
 
     // We check arguments in murmurhash.js; no need here
     String::Utf8Value key(args[0]->ToString());
+    uint32_t seed = args[1]->Int32Value();
 
-    uint32_t hash = murmurhash(*key, key.length(), 1);
+    uint32_t hash = murmurhash(*key, key.length(), seed);
 
     args.GetReturnValue().Set(hash);
 }
