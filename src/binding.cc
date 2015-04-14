@@ -11,14 +11,15 @@ using v8::Value;
 using v8::Object;
 using v8::Local;
 using v8::Exception;
+using v8::String;
 
 void Murmurhash(const FunctionCallbackInfo<Value>& args) {
     Isolate* isolate = args.GetIsolate();
 
     // We check arguments in murmurhash.js; no need here
-    Local<v8::String> key = Local<v8::String>::Cast(args[0]->ToString());
+    String::Utf8Value key(args[0]->ToString());
 
-    uint32_t hash = murmurhash(reinterpret_cast<const char*>(*key), key->Length(), 1);
+    uint32_t hash = murmurhash(*key, key.length(), 1);
 
     args.GetReturnValue().Set(hash);
 }
