@@ -17,7 +17,7 @@ murmurhash.hash('Hello, world!');
 ## `murmurhash.hash(key[, seed])`
 
 - key (`String`) The key to input to the [Murmurhash v3](https://en.wikipedia.org/wiki/MurmurHash) algorithm.
-- seed (`Number`) The seed to provide to the algorithm.
+- seed (`Number`) The optional seed to provide to the algorithm. Defaults to `0`.
 
 Hashes the given key with the given seed (seed is optional).
 
