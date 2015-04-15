@@ -3,7 +3,7 @@
 #include <nan.h>
 
 #include "binding.h"
-#include "../deps/murmurhash.c/murmurhash.h"
+#include "murmurhash.c/murmurhash.h"
 
 namespace murmurhashlib {
     
