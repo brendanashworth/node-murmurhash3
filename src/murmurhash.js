@@ -1,4 +1,4 @@
-var binding = require('../build/Release/murmurhash');
+var binding = require('bindings')('murmurhash');
 
 exports.hash = function(key, seed) {
     if (typeof key !== 'string')
