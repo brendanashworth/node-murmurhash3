@@ -1,3 +1,6 @@
+## 1.0.1, 2015-4-14
+Simple patch release that introduces the use of the `bindings` npm module rather than hotlinking to the compiled binary.
+
 ## 1.0.0, 2015-4-14
 First major release!
 
