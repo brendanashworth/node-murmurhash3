@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "bindings": "^1.2.1",
-    "nan": "^1.7.0"
+    "nan": "^1.8.0"
   }
 }
