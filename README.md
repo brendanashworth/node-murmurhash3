@@ -1,4 +1,4 @@
-# node-murmurhash [![Build Status](https://travis-ci.org/brendanashworth/node-murmurhash3.svg)](https://travis-ci.org/brendanashworth/node-murmurhash3)
+# node-murmurhash [![Build Status](https://travis-ci.org/brendanashworth/node-murmurhash3.svg)](https://travis-ci.org/brendanashworth/node-murmurhash3) [![Coverage Status](https://coveralls.io/repos/brendanashworth/node-murmurhash3/badge.svg)](https://coveralls.io/r/brendanashworth/node-murmurhash3)
 
 > Binding to [jwerle's murmurhash3](https://github.com/jwerle/murmurhash.c).
 
