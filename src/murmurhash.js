@@ -9,5 +9,5 @@ exports.hash = function(key, seed) {
     else if (seed === undefined)
         seed = 1;
 
-    return binding.hash(key, seed);
+    return binding.Murmurhash(key, seed);
 };
